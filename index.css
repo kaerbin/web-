@@ -1,0 +1,258 @@
+/*中间导航模块*/
+.grid {
+    height: 480px;
+    /*background-color: pink;*/
+}
+.grid-col1 {
+    width: 190px;
+    height: 100%;
+    background-color:#6e6568;
+    float:left;
+    font-size: 14px;
+    color:#fff;
+    position:relative;
+}
+.ad {
+    width: 250px;
+    height: 480px;
+    background-color: pink;
+    position:absolute;
+    top: 0;
+    left:-250px;
+}
+.ad-r {
+    position:absolute;
+    top: 0;
+    left:250px;
+    z-index: 999;
+    width: 0;
+    height:480px;
+    background:url(../images/ad.jpg) no-repeat;
+    transition: all 0.5s;
+}
+.ad:hover .ad-r {
+    width: 990px;
+}
+.grid-col1 a {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 3px ;
+}
+.grid-col1  ul a:hover {
+    color:#f10215;
+}
+.grid-col1 ul {
+    padding:20px 0;
+}
+.grid-col1 ul li {
+    padding-left:12px;
+    height: 26px;
+    line-height: 26px;
+}
+.grid-col1 ul li:hover {
+    background-color: #9c9698;
+}
+/*中间轮播图模块*/
+.grid-col2 {
+    width: 790px;
+    height: 100%;
+    float:left;
+    margin-left:10px ;
+}
+.grid-col2-b div {
+    float:left;
+    margin-top:10px;
+}
+.grid-col2-b div:last-child {
+    float:right;
+    margin-top:10px ;
+}
+.grid-col2-top {
+    position: relative;
+
+}
+.arrow-l,.arrow-r {
+    position:absolute;
+    top: 50%;
+    width: 30px;
+    height: 60px;
+    background:rgba(0,0,0,0.3);
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+    color:rgba(255,255,255,0.6);
+}
+.arrow-r {
+    right:0;
+}
+.circle {
+    width: 166px;
+    height: 20px;
+    background:rgba(0,0,0,0.3);
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom: 20px;
+    border-radius: 10px;
+    padding-left:6px ;
+}
+.circle li {
+    width: 12px;
+    height: 12px;
+    background:rgba(255,255,255,0.6);
+    border-radius: 50%;
+    float: left;
+    margin: 4px ;
+    cursor: pointer;
+    /*鼠标经过li变成手指*/
+}
+.circle .current {
+    background-color:#f10215;
+}
+/*右侧登陆界面模块*/
+.grid-col3 {
+    width: 190px;
+    height: 100%;
+    /*background-color:skyblue;*/
+    float: right;
+}
+/*登陆模块*/
+.login {
+    height: 85px;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+}
+.login-t {
+    width: 95px;
+    height: 60px;
+    line-height: 20px;
+    font-size:12px;
+    white-space:nowrap;
+    /*强制一行显示*/
+    /*overflow: hidden;*/
+    text-overflow:ellipsis ;
+    color:#666;
+    padding-left:60px ;
+    position: relative;
+}
+.login-t a:hover {
+    color:#f10215;
+
+}
+.login-t img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background:url(../images/login.jpg) no-repeat;
+    position:absolute;
+    top: 0;
+    left: 0;
+    float: left;
+}
+.login-b  a {
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    border-radius: 10px;
+    line-height: 20px;
+    text-align: center;
+    margin-left:3px ;
+}
+.login-b  a:first-child {
+    background-color: #fff;
+    color:#f10215;
+    box-shadow: 0 0 50px rgba(0,0,0,0.3);
+}
+.login-b  a:last-child {
+    background-color: #363634;
+    color:#d09c48;
+    box-shadow: 0 0 50px rgba(0,0,0,0.3);
+}
+.login-b  a:first-child:hover {
+    background-color: #f10215;
+    color:#fff
+}
+.login-b  a:last-child:hover {
+    background-color: #f10215;
+    color:#fff;
+}
+
+/*促销模块*/
+.news {
+    height: 154px;
+    /*background-color: purple;*/
+    border-bottom: 1px solid #ccc;
+    padding: 7px 13px 0;
+    box-sizing: border-box;
+}
+.news-t {
+    height: 19px;
+    /*border-bottom: 1px solid #ccc;*/
+}
+.news-t a {
+    display: block;
+    float:left;
+    height: 17px;
+    line-height: 17px;
+
+}
+.news-t a:hover {
+    border-bottom: 2px solid #f10215;
+}
+.cuxiao {
+    width: 38px;
+    border-right: 1px solid #ccc;
+    text-align:center;
+}
+.gg {
+    margin-left:15px ;
+}
+ .news .more {
+    float:right;
+}
+ .news-b {
+     padding-top:15px;
+ }
+.news-b li {
+     white-space:nowrap;
+    /*强制一行显示*/
+    text-overflow:ellipsis ;
+}
+/*查询模块*/
+.expend {
+    height: 209px;
+    overflow: hidden;
+
+}
+.expend ul {
+    width: 195px;
+}
+.expend li {
+    width: 47px;
+    height: 69px;
+    /*border-right: 1px solid #ccc;*/
+    /*border-bottom: 1px solid #ccc;*/
+    float:left;
+
+    position: relative;
+}
+.expend li a {
+    display: block;
+    padding-top: 15px;
+    text-align: center;
+
+
+}
+.expend li i {
+    font-family: iconfont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+}
+.expend span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left:10px;
+    text-align: center;
+}
